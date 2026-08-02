@@ -1,0 +1,115 @@
+.container {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 24px;
+}
+
+/* Perfect 4-Column Storefront Grid Rules */
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card Element Box Layout */
+.productCard {
+  background: #ffffff;
+  border-radius: 4px; /* Soft compact radius matching screenshot */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Maintains strict uniform 1:1 square canvas grids */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; 
+  background-color: #f7f7f7;
+}
+
+.productImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating Wishlist Heart Round Target Element Style */
+.favoriteBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  font-size: 0.8rem;
+}
+
+/* Under Content Padding Configurations */
+.productInfo {
+  padding: 12px 2px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Text Truncation Safety: Clamps titles to max 2 lines to align bottom buttons */
+.productTitle {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 2.8em; /* Equalizes card structural height properties */
+}
+
+.productPrice {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+/* Red Order Button Style */
+.orderBtn {
+  background-color: #e91e63;
+  color: #ffffff !important;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+  margin-top: auto; /* Forces button lock directly at bottom boundary */
+}
+
+/* Responsive Adaptive Fluid Breakpoints for Tablet & Mobile */
+@media (max-width: 1024px) {
+  .productsGrid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+}
+
+@media (max-width: 768px) {
+  .productsGrid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .container { padding: 0 12px; }
+}
+
+@media (max-width: 480px) {
+  .productsGrid { grid-template-columns: repeat(1, 1fr); }
+}
