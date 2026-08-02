@@ -38,7 +38,7 @@ export default function ContactPage() {
             <div className={styles.infoBlockItem}>
               <div className={styles.iconCircle}>📍</div>
               <div>
-                <h4>Location Hub</h4>
+                <h4>Downtown</h4>
                 <p>Kigali, Rwanda</p>
               </div>
             </div>
@@ -46,8 +46,8 @@ export default function ContactPage() {
             <div className={styles.infoBlockItem}>
               <div className={styles.iconCircle}>📞</div>
               <div>
-                <h4>Phone Line</h4>
-                <p>+250 780 000 000</p>
+                <h4>Call us</h4>
+                <p>+250 780563094</p>
               </div>
             </div>
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
               <div className={styles.iconCircle}>🕒</div>
               <div>
                 <h4>Working Hours</h4>
-                <p>Mon - Sat: 8 AM - 8 PM</p>
+                <p>Mon - Sat: 10 AM - 10 PM</p>
               </div>
             </div>
           </div>

@@ -22,9 +22,11 @@ export default function AboutPage() {
         </h1>
         <div className={styles.divider}></div>
         <p className={styles.heroDescription}>
-          Duhire Kicks Store is Rwanda&apos;s premier destination for exclusive, authentic footwear. 
-          We bridge the gap between global sneaker drops and local streetwear enthusiasts, ensuring you 
-          never have to compromise on style, comfort, or quality.
+          At Shema Shoes Store, we are redefining Rwanda’s footwear scene by serving as the ultimate hub for elite, 100% authentic sneakers. 
+          We actively bridge the gap between exclusive global drops and Kigali's streetwear enthusiasts, ensuring you always have access to the 
+          freshest releases without compromising on style, comfort, or quality. Step into our space to experience a vibrant hangout culture, 
+          complete with a live 
+          sneaker cleaning station, a curated local playlist, and interactive display walls designed to elevate your daily rotation..
         </p>
       </section>
 
